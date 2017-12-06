@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Formulario &#9733;</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  <!-- agregamos la libreria font-awesome-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+  
+  <style type="text/css">
+    
+
+  footer{
+    margin: 0;
+    margin-left: 50%;
+	position: absolute;
+	width: 100%;
+	bottom:0px;
+  }
+
+div.copyright{
+      margin-top: 1%;
+      font-family: 'Raleway';
+      color: black;
+      width: 100%;
+      text-align: center;
+      margin-left: 0%;
+      font-size: 85%;
+        }   
+
+body{
+	min-height: 50vh;
+	background-image: url('./img/yamahafondo.jpg');
+  background-repeat: no-repeat;
+}
+
+
+
+  header{
+  	z-index: 9999;
+    width: 100%;
+    background: #0B2161;
+    color:white;
+    position: fixed; /*esto lo que hace es que no me mueve el elemento de la posicion que le he dado*/
+    top: 0;
+    font-family: 'Anton', 'Lucida Console';
+    letter-spacing: 1px;
+  }
+
+ #btn-menu{
+    display: none;
+  }
+  
+  header label{
+    display: none;
+    width: 32px;
+    height: 30px;
+    padding: 10px;
+    border-right: 2px solid white;
+  }
+
+  header label:hover{ /*son las caracteristicas del icono de menu cuando coloco el cursor sobre el*/
+    cursor: pointer;
+    background-color: #0B0B3B;
+  }
+
+  .menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex; /*esto lo que hace es que coloca la lista en una misma linea*/
+  }
+
+  .menu li{
+    text-align: center;
+    flex-grow: 1; 
+    /* esto lo que hace es expandirme los cuadros de menu al tamano de la ventana cada vez que expando la ventana */
+  }
+
+   .menu li:hover{
+    border-bottom: 6px solid white;
+}
+
+    .menu li a:hover{ 
+    color: white;
+    text-decoration: none;
+  }
+
+
+  
+
+@media (max-width: 768px){ /*esto lo que hace es que cuando selecciono un link de la lista peque me la sombree en orange*/
+  .menu li:hover {
+    background-color: white;
+      }
+
+}
+
+  
+  .menu li a { /*esto lo que hace es hacer los cuadritos de los hipervinculos*/
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+.menu li a:hover { /*esto lo que hace es hacer los cuadritos de los hipervinculos*/
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+
+input[type=email] {
+    width: 230px;
+    padding: 15px 35px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+}
+
+input[type=email]:focus {
+    border: 3px solid orange;
+    width: 300px;
+}
+
+
+
+
+
+
+@media (max-width: 768px){ /*esto lo que hace es que me aparezca el icono de menu cuando encojo la pantalla*/
+    header label{
+      display: block;
+    }
+
+    .menu {
+      position: absolute; /*esto me permite crear un elemento independiente*/
+      background: #0B0B61;
+      width: 70%;
+      margin-left: -70%; /*esto lo que hace es esconderme a la izquierda el menu*/
+      transition: all 0.5s;
+    }
+
+    .menu ul{
+      flex-direction: column;/*esto lo que hace es hacerme la lista columna*/
+    }
+
+    .menu li{
+      border-top: 1px solid #fff;
+    }
+
+	.menu li a:hover {
+		color:#0B2161;
+	}
+
+    #btn-menu:checked ~ .menu{
+      margin: 0;
+    }
+  }
+ 
+
+
+ .button
+ {
+ 	font-family: 'Anton'; color: white; letter-spacing: 2px; padding: 10px 50px;
+background: rgb(0,28,112);
+background: -moz-linear-gradient(top, rgba(0,28,112,1) 54%, rgba(16,66,153,1) 83%);
+background: -webkit-linear-gradient(top, rgba(0,28,112,1) 54%,rgba(16,66,153,1) 83%);
+background: linear-gradient(to bottom, rgba(0,28,112,1) 54%,rgba(16,66,153,1) 83%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c70', endColorstr='#104299',GradientType=0 );
+ }
+
+ .button:hover
+ {
+
+background: rgb(16,66,153);
+background: -moz-linear-gradient(top, rgba(16,66,153,1) 23%, rgba(16,66,153,1) 23%, rgba(0,28,112,1) 54%);
+background: -webkit-linear-gradient(top, rgba(16,66,153,1) 23%,rgba(16,66,153,1) 23%,rgba(0,28,112,1) 54%);
+background: linear-gradient(to bottom, rgba(16,66,153,1) 23%,rgba(16,66,153,1) 23%,rgba(0,28,112,1) 54%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#104299', endColorstr='#001c70',GradientType=0 );
+ }
+
+
+.buttoninicio
+ {
+  top: 70%; left: 11%;
+  position: absolute;
+  font-family: 'Anton'; color: white; letter-spacing: 2px; padding: 10px 50px;
+background: rgb(0,28,112);
+background: -moz-linear-gradient(top, rgba(0,28,112,1) 54%, rgba(16,66,153,1) 83%);
+background: -webkit-linear-gradient(top, rgba(0,28,112,1) 54%,rgba(16,66,153,1) 83%);
+background: linear-gradient(to bottom, rgba(0,28,112,1) 54%,rgba(16,66,153,1) 83%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c70', endColorstr='#104299',GradientType=0 );
+ }
+
+ .buttoninicio:hover
+ {
+
+background: rgb(16,66,153);
+background: -moz-linear-gradient(top, rgba(16,66,153,1) 23%, rgba(16,66,153,1) 23%, rgba(0,28,112,1) 54%);
+background: -webkit-linear-gradient(top, rgba(16,66,153,1) 23%,rgba(16,66,153,1) 23%,rgba(0,28,112,1) 54%);
+background: linear-gradient(to bottom, rgba(16,66,153,1) 23%,rgba(16,66,153,1) 23%,rgba(0,28,112,1) 54%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#104299', endColorstr='#001c70',GradientType=0 );
+ }
+
+a:visited
+ {
+color: white;
+ }
+ 
+ a:hover
+ {
+color: white;
+ }
+
+@media (max-width: 940px){
+  .buttoninicio
+{
+  position:absolute;
+  top: 55%;
+  left: 9%;
+}
+}
+
+@media (max-width: 768px){
+  .buttoninicio
+{
+  position:absolute;
+  top: 50%;
+  left: 3%;
+}
+}
+ 
+@media (max-width: 560px){
+  .buttoninicio
+{
+  position:absolute;
+  top: 45%;
+  left: 3%;
+  padding: 5px 25px;
+}
+}
+
+@media (max-width: 480px){
+  .buttoninicio
+{
+  position:absolute;
+  top: 35%;
+  left: 3%;
+  padding: 5px 25px;
+}
+}
+
+@media (max-width: 360px){
+  .buttoninicio
+{
+  position:absolute;
+  top: 30%;
+  left: 3%;
+  padding: 5px 25px;
+}
+}
+
+@media (max-width: 285px){
+  .buttoninicio
+{
+  position:absolute;
+  top: 27%;
+  left: 3%;
+  padding: 5px 25px;
+}
+}
+
+  </style>

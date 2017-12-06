@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="./img/favicon.ico" />
+    <title>Contact Us &#9733;</title>
+
+    <link rel="stylesheet" href="./estiloformulario.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  <!-- agregamos la libreria font-awesome-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+  
+  <style type="text/css">
+
+ 
+
+
+
+  </style>
+
+</head>
+  <body>
+    
+    <header>
+      
+    <div>
+      <img src="./img/yamahalogo1.jpg" style="width: 100%">
+    </div>
+      
+
+
+
+        <label for="btn-menu"><i class="material-icons" style="font-size:30px;color:white;margin-top: -10px;margin-left: -10px">list</i></label>
+        <input type="checkbox" id="btn-menu">
+  
+         <nav class="menu">
+          <ul>
+             <li><a href="./index.html">HOME</a></li>
+             <li><a href="./signin.html">SIGN IN</a></li>
+             <li><a href="./registro.html">REGISTER</a></li>
+             <li><a href="./contact.html">CONTACT</a></li> 
+          </ul>
+         </nav>  
+
+    </header> 
+
+     <div class="container" style="margin-top:50px">
+             <div class="row text-center">
+                      <div class="col-xs-12" style="margin-top: 65px; font-family: 'Encode Sans Expanded'">
+                          <h1>CONTACT US</h1>
+                          <h6>* Required</h6>
+                          <form name="contact" method="post" id="contactus">
+                                <label for="name" style="margin-left: -45%">Name*</label><br>
+                                <input type="text" name="name" id="name" maxlength="100" style="width: 50%; padding: 10px"><br><br>
+                                <label for="lastname" style="margin-left: -42%">Lastname*</label><br>
+                                <input type="text" name="lastname" id="lastname" maxlength="100" style="width: 50%; padding: 10px"><br><br>
+                                <label for="email" style="margin-left: -40%">Email Address*</label><br>
+                                <input type="text" name="email" id="email" maxlength="100" title="Example: Johndoe@domainsite.com" style="width: 50%; padding: 10px"><br><br>
+                                <label for="phone" style="margin-left: -40%">Phone Number*</label><br>
+                                <input type="text" name="phone" id="phone" maxlength="12" placeholder="Example: (414)1234567" title="Example: (414)1234567" style="width: 50%; padding: 10px"><br><br>
+                                <label for="myquestion">My Question*</label><br>
+                                <select id="myquestion" name="myquestion" id="myquestion" style="padding: 10px">
+                                                <option value="select">Select An Option</option>
+                                                <option value="information">General Information</option>
+                                                <option value="account">My Account</option>
+                                                <option value="other">Other</option>
+                                </select><br><br>
+                                <label style="margin-left: -42%" for="comment">Comment*</label><br>
+                                <textarea placeholder="Max 250 characters" style="resize: none; width: 50%; height: 80px"></textarea><br><br>
+                                <button type="submit" name="button" id="contact" class="button" style="margin-right: 2%; padding: 10px 50px">SUBMIT</button>
+                                <button type="reset" name="reset" id="reset" class="button" style="padding: 10px 50px">RESET</button>
+
+                          </form>
+                      </div>
+              </div>
+    </div>
+
+<footer>
+    <div class="copyright" style="padding-top: 20px">
+      <img src="./img/starfishlogo.jpg" alt="ST&#9733;FISH" width="150px" >
+      <p>Copyright &copy; 2017 - ST<span style="font-size: 18px">&#9733;</span>RFISH </p>
+    </div> 
+</footer>
+
+    <!--Link para agregar el JS que yo misma cree-->
+    <script type="text/javascript" src="./script.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

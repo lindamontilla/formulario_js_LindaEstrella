@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="./img/favicon.ico" />
+    <title>Sign In &#9733;</title>
+
+    <link rel="stylesheet" href="./estiloformulario.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  <!-- agregamos la libreria font-awesome-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+  
+  <style type="text/css">
+
+   <style type="text/css">
+
+
+
+  </style>
+
+</head>
+  <body>
+    
+    <header>
+
+    <div>
+      <img src="./img/yamahalogo1.jpg" style="width: 100%">
+    </div>
+      
+
+        <label for="btn-menu"><i class="material-icons" style="font-size:30px;color:white;margin-top: -10px;margin-left: -10px">list</i></label>
+        <input type="checkbox" id="btn-menu">
+  
+         <nav class="menu">
+          <ul>
+             <li><a href="./index.html">HOME</a></li>
+             <li><a href="./signin.html">SIGN IN</a></li>
+             <li><a href="./registro.html">REGISTER</a></li>
+             <li><a href="./contact.html">CONTACT</a></li> 
+          </ul>
+         </nav>  
+
+    </header> 
+
+    
+<div class="container" style="margin-top:150px; font-family: 'Encode Sans Expanded'">
+          <div class="row text-center">
+            <div class="col-xs-12 col-sm-6">
+              <h1>Sign In</h1>
+              <h4>REGISTERED CUSTOMERS</h4>
+              <p style="text-align: justify; margin-left: 80px; width: 70%">If you are a registered user, please enter your email and password</p>
+                  <form name="signin" method="post" id="signin">
+                        <label for="email">Email Address</label><br>
+                        <input type="text" name="email" id="email" style="width: 70%; padding: 10px"><br><br>
+                        <label for="pass">Password</label><br>
+                        <input type="password" name="pass" id="pass" maxlength="12" title="8-12 alphanumeric characters" style="width: 70%; padding: 10px"><br><br>
+                        <button class="button" type="submit" id="submit" style="padding: 10px 50px">SIGN IN</button>
+                  </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-6" style="margin-top: 60px">
+                <h4>CREATE AN ACCOUNT</h4>
+                <p style="text-align: justify; margin-left: 80px; width: 70%">Creating an account is easy. Just fill out the form below and enjoy the benefits of being a registered customer</p><br>
+                <a href="./registro.html" style="text-decoration: none"><button type="button" class="button"> CREATE AN ACCOUNT</button></a>
+            </div>
+         </div>
+</div>
+
+
+<footer>
+    <div class="copyright" style="padding-top: 20px">
+      <img src="./img/starfishlogo.jpg" alt="ST&#9733;FISH" width="150px" >
+      <p>Copyright &copy; 2017 - ST<span style="font-size: 18px">&#9733;</span>RFISH </p>
+    </div> 
+</footer>
+
+    <!--Link para agregar el JS que yo misma cree-->
+    <script type="text/javascript" src="./script.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
